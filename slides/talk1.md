@@ -23,6 +23,7 @@ The ziffness of dorkies must:
 
 - Eat eggs
 - Drink coffee
+- Gobble sugar
 
 # In the evening
 
