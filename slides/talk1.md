@@ -14,6 +14,7 @@
       1     1          1             1
     456     78         910          12
 	 12     12        12            12
+         29     29         29           29
 	
 Table:  Demonstration of simple table syntax.
 
