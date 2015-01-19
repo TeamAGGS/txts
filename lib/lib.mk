@@ -9,12 +9,13 @@
 
 Dirs=$(Lib) $(Raw) $(Out)
 
+include $(Lib)/slides.mk
+
 define target
    $(subst $4,$5,\
       $(subst .$2,.$3,\
          $(shell ls $(Raw)/$1/*.$2)))
 endef
-
 
 ready : dirs files dots talks plots pages
 	@echo "See $(Out)"
@@ -86,3 +87,4 @@ $(Out)/posts/%.html : $(Raw)/posts/%.md
               --biblio $(Raw)/biblio.bib \
 	            -c        ../img/posty.css \
               -o $@ $<
+
