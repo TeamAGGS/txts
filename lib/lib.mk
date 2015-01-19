@@ -9,15 +9,13 @@
 
 Dirs=$(Lib) $(Raw) $(Out)
 
-include $(Lib)/slides.mk
-
 define target
    $(subst $4,$5,\
       $(subst .$2,.$3,\
          $(shell ls $(Raw)/$1/*.$2)))
 endef
 
-ready : dirs files dots talks plots pages
+ready : dirs intro copy files dots talks plots pages
 	@echo "See $(Out)"
 
 gitting:
@@ -56,6 +54,9 @@ dirs:
 
 files:
 	@cp -vrup $(Raw)/verbatim/* $(Out)
+
+copy : slides/*/*.md
+	@cat $^ > $(Raw)/slides/homework1.md
 
 talks:  $(call target,slides,md,html,$(Raw),$(Out))
 dots  : $(call target,dot,dot,png,$(Raw),$(Out)/img)
