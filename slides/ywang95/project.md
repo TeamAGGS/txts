@@ -12,4 +12,9 @@
 - Given this commonality, for this study *ln size* will be used as a predictor instead of just *size*
 - The link function will then be used to find the functional-form of the size-defect relationship
 
+# Expected outcome
 
+- Replicating the findings of the paper **Theory of relative proneness** to validate the hypothesis that -
+- *In large-scale software systems, smaller modules will be proportionally more
+defect prone compared to larger ones*
+- By builing cox models an identifying appropriate link function
