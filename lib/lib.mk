@@ -15,7 +15,7 @@ define target
          $(shell ls $(Raw)/$1/*.$2)))
 endef
 
-ready : dirs intro copy files dots talks plots pages
+ready : copy dirs files dots talks plots pages
 	@echo "See $(Out)"
 
 gitting:
@@ -44,6 +44,10 @@ status:
 	- git status
 
 Skeleton=dot etc plot slides verbatim/img
+
+copy: $(Raw)/slides/*/*.md
+	@cat $^ > $(Raw)/slides/all.md
+
 dirs: 
 	@$(foreach d,$(Skeleton),mkdir -p $(Raw)/$d;)
 	@mkdir -p $(Out)/slides
@@ -54,9 +58,6 @@ dirs:
 
 files:
 	@cp -vrup $(Raw)/verbatim/* $(Out)
-
-copy : slides/*/*.md
-	@cat $^ > $(Raw)/slides/homework1.md
 
 talks:  $(call target,slides,md,html,$(Raw),$(Out))
 dots  : $(call target,dot,dot,png,$(Raw),$(Out)/img)
