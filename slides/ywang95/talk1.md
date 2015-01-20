@@ -1,6 +1,3 @@
-% Eating Habits Update
-% Jane Doe
-% March 22, 2005
 
 # In the morning
 

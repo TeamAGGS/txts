@@ -2,6 +2,9 @@
 # Shivani Angane
 
 - Second year Masters student
-- Enjoys painting!
-- A sneak peek into my world of art [here](http://reachshivani.yolasite.com)!
-- Reach me at ssangane@ncsu.edu
+- Enjoy painting!
+- Peek into my world of art from [here](http://reachshivani.yolasite.com)!
+- Reach me at ssangane@ncsu.edu!
+
+<img align=right src="../img/s_minion.jpg">
+
