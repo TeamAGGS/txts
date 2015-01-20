@@ -9,3 +9,5 @@
 - Enjoys cooking, dancing and travelling
 - Can be reached at asaxena2@ncsu.edu
 
+<img align=right src="../img/pic.jpg">
+
